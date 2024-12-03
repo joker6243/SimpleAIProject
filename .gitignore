@@ -1,0 +1,66 @@
+# OSによるファイル
+.DS_Store
+Thumbs.db
+
+# Node.js
+/frontend/node_modules
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/package-lock.json
+/frontend/.pnp
+/frontend/.pnp.js
+
+# TypeScript
+/build
+/dist
+*.tsbuildinfo
+
+# Python
+__pycache__/
+/*.py[cod]
+*.sqlite3
+*.pyo
+*.log
+.Python
+env/
+venv/
+ENV/
+*.env
+*.env.*
+
+# Docker
+*.pid
+*.tar
+*.bak
+*.temp
+docker-compose.override.yml
+
+# IDEやエディタ関連
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml
+
+# OS別一時ファイル
+*.~lock.*
+*.tmp
+*.swp
+*.swo
+
+# セキュリティ関連
+.env
+/secrets/
+*.key
+*.pem
+*.crt
+
+# その他
+coverage/
+*.coverage
+*.pytest_cache
+pytest_cache/
+logs/
+output/
+temp/
