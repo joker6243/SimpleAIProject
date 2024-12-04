@@ -8,8 +8,10 @@ services:
       - "8011:8011"
     volumes:
       - ./backend/app:/app
+      - ./backend/db:/app/db  # SQLiteデータベースファイルの永続化
     environment:
-      - PYTHONUNBUFFERED=1
+      - API_URL=${API_URL}
+      - PYTHONUNBUFFERED=${PYTHONUNBUFFERED}
 
   frontend:
     build:
@@ -19,4 +21,5 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend:/app
+      - /app/node_modules  # node_modules をコンテナ内にのみ保持
     stdin_open: true
