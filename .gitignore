@@ -1,6 +1,7 @@
 # OSによるファイル
 .DS_Store
 Thumbs.db
+/backend/app/test.db
 
 # Node.js
 /frontend/node_modules
