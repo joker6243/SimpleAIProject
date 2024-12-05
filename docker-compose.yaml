@@ -7,8 +7,8 @@ services:
     ports:
       - "8011:8011"
     volumes:
-      - ./backend/app:/app
-      - ./backend/db:/app/db  # SQLiteデータベースファイルの永続化
+      - ./backend/app:/workspace/app  # app フォルダ全体を正しくマウント
+      - ./backend/db:/workspace/app/db  # SQLiteデータベースの永続化
     environment:
       - API_URL=${API_URL}
       - PYTHONUNBUFFERED=${PYTHONUNBUFFERED}
